@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49ba92cd-b2dc-41b5-bc9e-bb1be1a81567" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Pokemao-main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Pokemao-main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/world/Categories.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/world/Categories.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/world/Player.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/world/Player.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/world/Pokemao.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/world/Pokemao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/world/World.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/world/World.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +15,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2IVYYvKTrxog4tZp0YqNQtznhAO" />
   <component name="ProjectViewState">
@@ -35,11 +40,25 @@
       <option name="presentableId" value="Default" />
       <updated>1670268271683</updated>
       <workItem from="1670268273568" duration="510000" />
-      <workItem from="1670268802807" duration="300000" />
+      <workItem from="1670268802807" duration="602000" />
+      <workItem from="1670269425224" duration="9389000" />
+      <workItem from="1670364206556" duration="592000" />
+      <workItem from="1670429172136" duration="2772000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
