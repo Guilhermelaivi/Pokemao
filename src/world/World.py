@@ -1,6 +1,7 @@
 from Player import *
 from Stadium import *
 from Pokemao import *
+from Utils import *
 # from .Pokemao import definitionPokemao
 import os
 
@@ -24,13 +25,12 @@ def colorPokemao(namePokemao):
         return colors.BLACK
 
 
-# print("------------ Seja bem-vindo ao mundo pokemão, se prepare pois você encontrará bastante aventura! ------------ \nBatalhe com bravura!\n")
+initializeWorld()
+playerName = getPlayerName()
+msgInitialWorld()
+startHistory(Pokemao,Player,playerName,startPokemaos)
 
-# playerName = input("Defina seu nome:\n")
-# os.system("cls||clear")
-# print("Agora você começará sua jornada no mundo pokemão.\nNote que você já começa com um pokemão e poderá capturar mais ao longo de sua jornada!")
-# initialPokemao = Pokemao.definitionPokemao()
-# player = Player(playerName, initialPokemao)
+
 # colorInitialPokemao = colorPokemao(player.pokemaos.name.value)
 # print(f"Mestre pokemão {player.name}, seu pokemão inicial é: " +
 #       f"{colorInitialPokemao} {player.pokemaos.name.value}")

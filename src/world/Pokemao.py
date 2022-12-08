@@ -9,15 +9,18 @@ class Pokemao:
         self.level = level
         self.experience = experience
     def definitionPokemao():
-        charmaoder = Pokemao(Types.FIRE,PokemaoNames.CHARMAODER,0,0) 
-        maosauro = Pokemao(Types.WIND,PokemaoNames.MAOSAURO,0,0)
-        maojadinha = Pokemao(Types.WATER,PokemaoNames.MAOJADINHA,0,0)
-        arr = []
-        arr.append(charmaoder)
-        arr.append(maosauro)
-        arr.append(maojadinha)
         pokemaoSorted = random.choice(arr)         
         return pokemaoSorted 
+
+def startPokemaos():
+    arr = []
+    charmaoder = Pokemao(Types.FIRE,PokemaoNames.CHARMAODER,0,0) 
+    maosauro = Pokemao(Types.WIND,PokemaoNames.MAOSAURO,0,0)
+    maojadinha = Pokemao(Types.WATER,PokemaoNames.MAOJADINHA,0,0)
+    arr.append(charmaoder)
+    arr.append(maosauro)
+    arr.append(maojadinha)
+    return arr
 
 
 
