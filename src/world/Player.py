@@ -3,3 +3,4 @@ class Player:
     def __init__(self,name,pokemaos):
         self.name = name
         self.pokemaos = pokemaos
+

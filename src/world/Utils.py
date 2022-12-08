@@ -1,6 +1,7 @@
 import os
 
-
+class TextColors:
+    ENDC = "\033[0m" 
 def initializeWorld():
     os.system("cls||clear")
     print("------------ Seja bem-vindo ao mundo pokemão, se prepare pois você encontrará bastante aventura! ------------ \nBatalhe com bravura!\n")
@@ -20,6 +21,11 @@ def msgInitialWorld():
 
 def startHistory(Pokemao, Player, playerName, startPokemaos):
     print("Sua jornada começa agora!\nNote que você já começa com um Pokemão.")
-    initialPokemao = startPokemaos()
-    pokemaoSorted = Pokemao.definitionPokemao(initialPokemao)
-    player = Player(playerName, initialPokemao)
+    initialPokemaos = startPokemaos()
+    pokemaoSorted = Pokemao.definitionPokemao(initialPokemaos)
+    player = Player(playerName, pokemaoSorted)
+    clearTerminal()
+    print(f"Mestre Pokemao {player.name}, seu pokemão inicial é:" + f"{player.pokemaos.color} {player.pokemaos.name} {TextColors.ENDC}")
+   
+    # clearTerminal()
+    #openMenu
