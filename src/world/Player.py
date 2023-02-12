@@ -5,7 +5,6 @@ from Utils import TextColors
 
 
 class Player:
-    age = 31
     pokemaos = []
 
     def __init__(self, name, pokemaos):
@@ -20,6 +19,7 @@ class Player:
             print("Você já possui o limite máximo de 3 Pokemaos, se desfaça de um pokemon para adquirir outro")
             return
         self.pokemaos.append(pokemao)
+        return True
 
     def openMenu(self, playerName):
         os.system("cls||clear")
@@ -76,11 +76,11 @@ class Player:
         if winner:
             capture = input("Deseja capturar este pokemon?\n1 - Sim\n2 - Não")
             if int(capture) == 1:
-                print("Pokemon Capturado com sucesso")
-                self.insertPokemao(pokemaoRandom)
+                captured = self.insertPokemao(pokemaoRandom)
+                if captured:
+                    print("Pokemon Capturado com sucesso")
             else:
                 print("Você poderá capturar mais pokemaos durante a sua jornada")
-
 
     def GenerateRandomPokemonToCapture(self):
         result = ""

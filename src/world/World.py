@@ -18,8 +18,8 @@ infoInitialPokemons(clearTerminal)
 player = intialStoryWithFirstPokemon(playerName, initialPokemaos, Pokemao, Player, clearTerminal)
 # Open Menu of game
 player.openMenu(player.name)
-pokemao2 = Pokemao(PokemaoNamesAndTypes.MAOSAURO, 0,0)
-player.insertPokemao(pokemao2)
+# pokemao2 = Pokemao(PokemaoNamesAndTypes.MAOSAURO, 0,0)
+# player.insertPokemao(pokemao2)
 
 
 
