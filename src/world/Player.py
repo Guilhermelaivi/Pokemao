@@ -15,16 +15,38 @@ class Player:
         return str(self.__class__) + ": " + str(self.__dict__)
 
     def insertPokemao(self, pokemao):
+        print(self.pokemaos)
         if (len(self.pokemaos) > 2):
-            print("Você já possui o limite máximo de 3 Pokemaos, se desfaça de um pokemon para adquirir outro")
-            return
+            print("Você já possui o limite máximo de 3 Pokemaos, se desfaça de um pokemon para adquirir outro.\n")
+            optionUser = input("Você deseja se desfazer de algum pokemão?\n1 - Sim\n 2 - Não")
+            if optionUser == 1:
+                print("Escolha o pokemão a ser retirado do seu pokedex!\n")
+                exit()
+                self.presentPokemaosDel()
+                return
         self.pokemaos.append(pokemao)
         return True
+        
 
     def openMenu(self, playerName):
         os.system("cls||clear")
         print(f"Jogador {playerName} você acaba de abrir sua pokedex.\nO que você deseja fazer agora?")
         print(f"\n1 - Visualizar Pokemaos\n2 - Duelar por Ginásios\n3 - Capturar Pokemaos\n4 - Sair")
+
+    def presentPokemaosDel(self):
+        count = 0
+        os.system("cls||clear")
+        print("--- Lista de Pokemaos ---")
+        for x in self.pokemaos: 
+            print(f"{(count + 1)} - {x.name}")
+            count+=1
+        optionUser = input()
+        for x, i in self.pokemaos:
+            if optionUser == x[i]:
+                self.pokemaos.pop(i) 
+                print("Seu pokemão foi substituido!")
+                input("Enter para voltar")
+            
 
     def presentPokemaos(self):
         os.system("cls||clear")
@@ -32,6 +54,7 @@ class Player:
         for x in self.pokemaos:
             print(x.name)
         input("Enter para voltar")
+        
 
     def initialMsg(self):
         os.system("cls||clear")
@@ -74,7 +97,7 @@ class Player:
         option = self.choicePokemon(pokemaoRandom)
         winner = self.battle(option)
         if winner:
-            capture = input("Deseja capturar este pokemon?\n1 - Sim\n2 - Não")
+            capture = input("Deseja capturar este pokemon?\n1 - Sim\n2 - Não\n")
             if int(capture) == 1:
                 captured = self.insertPokemao(pokemaoRandom)
                 if captured:
